@@ -1,0 +1,16 @@
+<html>
+<head>
+	<title>Quote Board</title>
+</head>
+<body>
+	<h1>Here are the quotes!</h1>
+	<a href="/">Back</a>
+
+	<% for(var i=0; i<x.length; i++) {%>
+		<p><b>"<%= x[i].quote %>"</b></p>
+		<p> <%= x[i].name %> on <%= x[i].created_at %> </p>
+		<hr>
+
+	<% } %>
+</body>
+</html>

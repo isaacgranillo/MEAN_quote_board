@@ -1,0 +1,20 @@
+<html>
+<head>
+	<title>Quote Board</title>
+</head>
+<body>
+	<h1>Welcome to the Quote Board!</h1>
+	<h3>Post your own quote or skip to see what others have posted</h3>
+	
+	<form action='/quotes' method='post'>
+		Your name: <input type='text' name='name'>
+		Your quote: <input type='textarea' name='quote'>
+		<input type='submit' value='Add my quote!'>
+	</form>
+	
+	<form action='/quotes' method='get'>
+		<input type='submit' value='Skip to quotes!'>
+	</form>
+
+</body>
+</html>
